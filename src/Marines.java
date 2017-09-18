@@ -16,4 +16,10 @@ public class Marines extends Soldier implements Karate, KungFu {
         bomb1.bombString = "I am the bomb string!";
         return bomb1;
     }
+
+    // here is where we are overriding the default method
+    @Override
+    public String read() {
+        return "Now we are doing the Marine version of reading!";
+    }
 }
