@@ -18,5 +18,15 @@ public class Main {
 
         // call the default method that gets overriden in Marines
         System.out.println(marine1.read());
+
+        // Extras
+        ExtraExtendSoldier extraExtendSoldier = new ExtraExtendSoldier();
+        // calling the identical method from the two interfaces
+        extraExtendSoldier.identicalMethod();
+
+        System.out.println(extraExtendSoldier.returnsAStringMethod());
+        System.out.println(extraExtendSoldier.returnsAnInteger());
+
+
     }
 }
